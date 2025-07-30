@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricali Salgados | Salgados Artesanais</title>
+  <meta name="description" content="Salgados artesanais premium no Rio de Janeiro. Entrega rápida, qualidade garantida e os melhores preços!">
+  <meta name="keywords" content="salgados, coxinha, empada, festas, eventos, Rio de Janeiro">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <meta property="og:title" content="Ricali Salgados | Salgados Artesanais">
+  <meta property="og:description" content="Os melhores salgados artesanais do Rio de Janeiro">
+  <meta property="og:image" content="img/social-share.jpg">
+  <meta property="og:url" content="https://www.ricalisalgados.com.br">
+</head>
+<body>
+  <!-- Loader -->
+  <div class="loader">
+    <div class="loader-content">
+      <img src="img/ricalogo.png" alt="Ricali Salgados" class="loader-logo">
+      <div class="loader-spinner"></div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <img src="img/ricalogo.png" alt="Ricali Salgados" class="logo-img">
+        <span class="logo-text">Ricali<span>Salgados</span></span>
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Início</a></li>
+          <li><a href="#products" class="nav-link"><i class="fas fa-utensils"></i> Cardápio</a></li>
+          <li><a href="#gallery" class="nav-link"><i class="fas fa-images"></i> Galeria</a></li>
+          <li><a href="#contact" class="nav-link"><i class="fas fa-phone-alt"></i> Contato</a></li>
+          <li><a href="#testimonials" class="nav-link"><i class="fas fa-star"></i> Avaliações</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="https://api.whatsapp.com/message/M4IPBFYWPVSXK1?autoload=1&app_absent=0" class="whatsapp-header" target="_blank">
+          <i class="fab fa-whatsapp"></i> Pedir Agora
+        </a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-image">
+      <img src="img/variedade.webp" alt="Variedade de salgados" loading="lazy">
+      <div class="image-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 data-aos="fade-up"> Salgados <span>Artesanais</span></h1>
+        <p data-aos="fade-up" data-aos-delay="100">Feitos com ingredientes selecionados e muito amor para sua festa ou evento</p>
+        <div class="hero-buttons" data-aos="fade-up" data-aos-delay="200">
+          <a href="#products" class="btn btn-primary"><i class="fas fa-utensils"></i> Ver Cardápio</a>
+          <a href="https://api.whatsapp.com/message/M4IPBFYWPVSXK1?autoload=1&app_absent=0" class="btn btn-whatsapp" target="_blank"><i class="fab fa-whatsapp"></i> Pedir pelo WhatsApp</a>
+        </div>
+      </div>
+    </div>
+    <a href="#products" class="scroll-down" data-aos="fade-up" data-aos-delay="600">
+      <i class="fas fa-chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- Produtos -->
+  <section class="products section-padding" id="products">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Cardápio <span>Completo</span></h2>
+      <div class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Nossos salgados mais pedidos por quantidade</div>
+      
+      <div class="product-filters" data-aos="fade-up" data-aos-delay="200">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="fritos">Fritos</button>
+        <button class="filter-btn" data-filter="especiais">Combos</button>
+      </div>
+      
+      <div class="products-grid" id="products-grid"></div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section class="gallery section-padding" id="gallery">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Nossa <span>Galeria</span></h2>
+      <div class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Conheça nossos salgados</div>
+      
+      <div class="gallery-grid">
+        <div class="gallery-item" data-aos="zoom-in">
+          <img src="img/salgados%20assados.webp" alt="Salgados assados" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="img/frango.webp" alt="Coxinha de frango" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/calabresa.jpg" alt="Calabresa" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in">
+          <img src="img/churro.webp" alt="Churros" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="img/quibe.jpg" alt="Kibe" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="img/salgados%20assados.webp" alt="Variedade de salgados" loading="lazy">
+          <div class="gallery-overlay">
+            <i class="fas fa-search-plus"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section class="contact section-padding" id="contact">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">Entre em <span>Contato</span></h2>
+      <div class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Encomende seus salgados</div>
+      
+      <div class="contact-container">
+        <div class="contact-info" data-aos="fade-right">
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div>
+              <h4>Endereço</h4>
+              <p>Rua Jerônimo Pinto, 886 Casa A <br>Praça Seca - Rio de Janeiro/RJ</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div>
+              <h4>Telefone</h4>
+              <p>(21) 98875-58708</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div>
+              <h4>E-mail</h4>
+              <p>contato@ricalipremium.com.br</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div>
+              <h4>Horário de Funcionamento</h4>
+              <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+            </div>
+          </div>
+          
+          <div class="contact-social">
+            <h4>Siga-nos</h4>
+            <div class="social-icons">
+              <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/ricali-salgados-campinho/cadcf78b-6187-4ef0-be93-00c991275d73?UTM_Medium=share" class="social-icon ifood" target="_blank" title="iFood">
+                <i class="fas fa-utensils"></i>
+              </a>
+              <a href="https://www.instagram.com/ricalisalgados/" class="social-icon instagram" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://api.whatsapp.com/message/M4IPBFYWPVSXK1?autoload=1&app_absent=0" class="social-icon whatsapp" target="_blank" title="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <form id="order-form" class="contact-form" data-aos="fade-left">
+          <h3>Encomendar </h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="order-name">Nome Completo *</label>
+              <input type="text" id="order-name" required class="form-control" placeholder="Seu nome completo">
+            </div>
+            <div class="form-group">
+              <label for="order-phone">Telefone *</label>
+              <input type="tel" id="order-phone" required class="form-control" placeholder="(21) 99999-9999">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="order-date">Data para Entrega *</label>
+            <input type="date" id="order-date" required class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="order-products">Selecione as Quantidades *</label>
+            <select id="order-products" multiple class="form-control" required>
+              <option value="1">25 Salgados (R$ 24,90)</option>
+              <option value="2">50 Salgados (R$ 39,90)</option>
+              <option value="3">100 Salgados (R$ 69,90)</option>
+              <option value="4">25 Salgados + Coca Cola Lata 350ml (R$ 29,90)</option>
+              <option value="5">50 Salgados + Guaraná Antartica 1L (R$ 49,90)</option>
+              <option value="6">100 Salgados + Guaraná Antartica 1L (R$ 79,90)</option>
+            </select>
+            <small>Segure Ctrl (Windows) ou Command (Mac) para selecionar múltiplos itens</small>
+          </div>
+          <div class="form-group">
+            <label>Forma de Pagamento:</label>
+            <div class="payment-options">
+              <label class="payment-option">
+                <input type="radio" name="payment" value="PIX" checked>
+                <span>PIX</span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="Cartão de Débito">
+                <span>Débito</span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="Cartão de Crédito">
+                <span>Crédito</span>
+              </label>
+              <label class="payment-option">
+                <input type="radio" name="payment" value="Dinheiro">
+                <span>Dinheiro</span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="order-message">Observações</label>
+            <textarea id="order-message" class="form-control" placeholder="Alguma restrição alimentar? Horário de entrega? Quantidade de pessoas?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">
+            <i class="fas fa-paper-plane"></i> Enviar Pedido
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mapa -->
+  <div class="map-container" data-aos="fade-up">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.328384358921!2d-43.3433889246876!3d-22.90237657925839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU0JzA4LjYiUyA0M8KwMjAnMzMuOSJX!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+
+  <!-- Depoimentos -->
+  <section class="testimonials section-padding" id="testimonials">
+    <div class="container">
+      <h2 class="section-title" data-aos="fade-up">O Que Dizem <span>Nossos Clientes</span></h2>
+      <div class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Avaliações de quem já experimentou</div>
+      
+      <div class="swiper testimonials-slider" data-aos="fade-up" data-aos-delay="200">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"Os melhores salgados que já comprei! Sempre encomendo para minhas festas e todos elogiam. A coxinha é incrível e o atendimento é excelente."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Ana Silva" loading="lazy">
+                <h4>Ana Silva</h4>
+                <span>Cliente há 8 meses</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>"Contratamos para um evento de 200 pessoas e os salgados foram um sucesso! Todos pediram o contato. A entrega foi pontual e tudo chegou quentinho."</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Carlos Oliveira" loading="lazy">
+                <h4>Carlos Oliveira</h4>
+                <span>Evento Corporativo</span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-item">
+              <div class="testimonial-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>"Sempre peço pacotes de 50 salgados para as reuniões na empresa. A qualidade é excelente e o preço justo. O kibe recheado é nosso favorito!"</p>
+              <div class="testimonial-author">
+                <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Mariana Costa" loading="lazy">
+                <h4>Mariana Costa</h4>
+                <span>Cliente frequente</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <a href="#" class="footer-logo">
+            <img src="img/ricalogo.png" alt="Ricali Salgados" class="footer-logo-img">
+            <span class="footer-logo-text">Ricali<span>Salgados</span></span>
+          </a>
+          <p>Especializados em salgados artesanais premium feitos com ingredientes selecionados e muito amor.</p>
+          <div class="footer-social">
+            <a href="https://www.ifood.com.br/delivery/rio-de-janeiro-rj/ricali-salgados-campinho/cadcf78b-6187-4ef0-be93-00c991275d73?UTM_Medium=share" class="footer-social-icon ifood" target="_blank">
+              <i class="fas fa-utensils"></i>
+            </a>
+            <a href="https://www.instagram.com/ricalisalgados/" class="footer-social-icon instagram" target="_blank">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/message/M4IPBFYWPVSXK1?autoload=1&app_absent=0" class="footer-social-icon whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="#home"><i class="fas fa-chevron-right"></i> Início</a></li>
+            <li><a href="#products"><i class="fas fa-chevron-right"></i> Cardápio</a></li>
+            <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Galeria</a></li>
+            <li><a href="#contact"><i class="fas fa-chevron-right"></i> Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Nossos Salgados</h3>
+          <ul>
+            <li><a href="#products"><i class="fas fa-chevron-right"></i> Salgados Fritos</a></li>
+            <li><a href="#products"><i class="fas fa-chevron-right"></i> Combos</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Rua Jerônimo Pinto,886 Casa A - Praça Seca</li>
+            <li><i class="fas fa-phone-alt"></i> (21) 98875-58708</li>
+            <li><i class="fas fa-envelope"></i> contato@ricalipremium.com.br</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Ricali Salgados. Todos os direitos reservados.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa" title="Visa"></i>
+          <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+          <i class="fab fa-cc-paypal" title="PayPal"></i>
+          <i class="fas fa-barcode" title="Boleto"></i>
+          <i class="fas fa-money-bill-wave" title="Dinheiro"></i>
+          <i class="fas fa-hand-holding-usd" title="PIX"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão Fixo do WhatsApp -->
+  <a href="https://api.whatsapp.com/message/M4IPBFYWPVSXK1?autoload=1&app_absent=0" class="whatsapp-btn" target="_blank" title="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Modal de Produto -->
+  <div class="product-modal" id="product-modal">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="close-modal" id="close-modal"><i class="fas fa-times"></i></button>
+      <div class="modal-product-image" id="modal-product-image"></div>
+      <div class="modal-product-info">
+        <h3 class="modal-product-title" id="modal-product-title"></h3>
+        <div class="modal-product-price" id="modal-product-price"></div>
+        <div class="modal-product-description" id="modal-product-description"></div>
+        <div class="modal-product-actions">
+          <button class="btn btn-primary btn-block add-to-cart-btn" id="add-to-cart-btn">
+            <i class="fas fa-shopping-cart"></i> Adicionar ao Pedido
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
